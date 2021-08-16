@@ -1,4 +1,16 @@
 .card{
-    color:#f1f;
-    font-size: 20px;
+border: 1px dashed red;
+
+}
+
+.card__image{
+    width:  343px;
+}
+
+.card__image img{
+    width:  343px;
+}
+
+.card__text{
+    font-size: 30px;
 }

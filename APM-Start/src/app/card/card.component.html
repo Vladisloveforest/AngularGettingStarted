@@ -1,4 +1,12 @@
-<p>{{text}}</p>
-<img [src]="imgUrl" alt="ha">
-<button (click)="toggleImage(); changeText()"></button>
-<input type="text" (input)="onChangeInput($event)">
+<div class="card">
+    <div class="card__image">
+        <img [src]="imgUrl" alt="card image">
+    </div>
+    <div [ngStyle]='textStyle' class="card__text">
+        {{text}}
+    </div>
+
+    <button (click)='changeImg()' [disabled]='disabled'>change img</button>
+    <!-- <input type="text"(input)='changeText($event)' [value]='text'> -->
+    <input type="text" [(ngModel)] ="text" (ngModelChange)='onInputChange()'>
+</div>
