@@ -1,32 +1,13 @@
-﻿<div class="card">
-  <!-- <div class="card-header">
-    {{pageTitle}}
+﻿  <div class="button-container">
+    <button class="btn btn-primary"(click)='this.showImages = !this.showImages'> {{showImages ? "hide" : "show"}} images </button>
+    <input type="text" placeholder="search by title" [(ngModel)]="filterItems">
   </div>
-  <div class="card-body">
-    <div class="container-fluid">
-      <div class="text-center">
-        <img src="./assets/images/logo.jpg"
-             class="img-responsive center-block"
-             style="max-height:300px;padding-bottom:50px" />
-      </div>
 
-      <div class="text-center">Developed by:</div>
-      <div class="text-center">
-        <h3>Deborah Kurata</h3>
-      </div>
+  <hr>
 
-      <div class="text-center">@deborahkurata</div>
-      <div class="text-center">
-        <a href="http://www.bit.ly/DeborahKsBlog">www.bit.ly/DeborahKsBlog</a>
-      </div>
+  <div class='cards' *ngIf="showImages">
+    <div *ngFor='let card of imagesUrls; let i = index'>
+      <!-- next line is not readable i will refactor it later probably -->
+      <app-card *ngIf="filterItems.length > 0 ? filterItems == this.titles[i] ? true: this.titles[i].includes(filterItems) : true"  [title]='this.titles[i]' [url]='card'></app-card>
     </div>
   </div>
-  
-  -->
-  <div style="display:flex; justify-content:space-around">
-    <app-card></app-card> 
-    <app-card></app-card> 
-    <app-card></app-card> 
-  </div>
-
-</div>

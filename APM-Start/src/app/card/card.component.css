@@ -1,6 +1,6 @@
 .card{
-border: 1px dashed red;
-
+border: 1px dashed #333;
+height: 400px;
 }
 
 .card__image{
@@ -11,6 +11,8 @@ border: 1px dashed red;
     width:  343px;
 }
 
-.card__text{
+.card__title{
     font-size: 30px;
+    text-align: center;
+    margin-top: 5px;
 }
