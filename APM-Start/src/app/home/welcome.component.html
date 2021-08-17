@@ -6,8 +6,9 @@
   <hr>
 
   <div class='cards' *ngIf="showImages">
-    <div *ngFor='let card of imagesUrls; let i = index'>
-      <!-- next line is not readable i will refactor it later probably -->
-      <app-card *ngIf="filterItems.length > 0 ? filterItems == this.titles[i] ? true: this.titles[i].includes(filterItems) : true"  [title]='this.titles[i]' [url]='card'></app-card>
-    </div>
+    <ng-container *ngFor='let card of imagesUrls; let i = index'>
+        <!-- next line is not readable i will refactor it later probably -->
+        <app-card *ngIf="filterItems.length > 0 ? filterItems == this.titles[i] ? true: this.titles[i].includes(filterItems) : true"  [title]='this.titles[i]' [url]='card'></app-card>
+    </ng-container>
+
   </div>
