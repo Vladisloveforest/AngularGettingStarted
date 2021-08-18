@@ -11,7 +11,8 @@ export class WelcomeComponent implements OnInit {
   public pageTitle = 'Just Random Pictures';
   showImages:boolean = true;
   filterItems:string = '';
-  titles: string[] = ['coffee','book','droplets','tower','field','car','mansion','random image','station','field','plant','random image','city','plants','cow','trees','coast',]
+  titles: string[] = ['coffee','book','droplets','tower','field','car','mansion','random image','station','field','plant','random image','city','plants','cow','trees','coast',];
+  stars: number[] = [1,2,3,1,2,3,1,2,3,1,2,3,2,2,3,2,3];
 
   constructor() {}
 

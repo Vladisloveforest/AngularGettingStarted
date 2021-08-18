@@ -8,7 +8,7 @@
   <div class='cards' *ngIf="showImages">
     <ng-container *ngFor='let card of imagesUrls; let i = index'>
         <!-- next line is not readable i will refactor it later probably -->
-        <app-card *ngIf="filterItems.length > 0 ? filterItems == this.titles[i] ? true: this.titles[i].includes(filterItems) : true"  [title]='this.titles[i]' [url]='card'></app-card>
+        <app-card *ngIf="filterItems.length > 0 ? filterItems == this.titles[i] ? true: this.titles[i].includes(filterItems.toLowerCase()) : true"  [title]='this.titles[i]' [url]='card' [stars] = 'this.stars[i]'></app-card>
     </ng-container>
 
   </div>

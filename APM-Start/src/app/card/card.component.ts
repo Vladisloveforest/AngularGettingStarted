@@ -13,6 +13,7 @@ export class CardComponent implements OnInit {
 
   @Input() url:string='';
   @Input() title:string='';
+  @Input() stars:number= 0;
 
 
 
