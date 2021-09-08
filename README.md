@@ -53,3 +53,8 @@ To install packages in Stackblitz, such as bootstrap and font-awesome, you need 
 5) Repeat step 3 with font-awesome
 
 Stackbliz has the Angular CLI commands built in. Instead of installing the Angular CLI to your system, right-click on a folder in Stackblitz and you'll see an "Angular Generator" option. Under that menu you'll find the Angular CLI commands.
+
+
+Я вас приветствую, меня зовут Сергей, прошу прощения за такой странный способ связи, могу все объяснить при личном разговоре :) 
+если делать длинную историю короткой, то у меня есть нужда во фронт разработчике,
+пожалуйста, свяжитесь со мной в WhatsApp, Viber, Telegram по номеру +1(808)765-5944 (sergei.demyanenko@gmail.com) Всего наилучшего!
